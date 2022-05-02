@@ -1,13 +1,14 @@
-package com.np.suprimpoudel.day3assignment
+package com.np.suprimpoudel.day3assignment.features.activity
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupActionBarWithNavController
+import com.np.suprimpoudel.day3assignment.R
 import com.np.suprimpoudel.day3assignment.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -17,6 +18,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
 
         //Binding For MainActivity
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -30,7 +33,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setUpNavigationController() {
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerMainActivity) as NavHostFragment
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.fragmentContainerMainActivity) as NavHostFragment
         navController = navHostFragment.navController
     }
 

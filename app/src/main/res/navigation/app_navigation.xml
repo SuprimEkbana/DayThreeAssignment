@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/fragmentA"
-        android:name="com.np.suprimpoudel.day3assignment.FragmentA"
+        android:name="com.np.suprimpoudel.day3assignment.features.fragments.FragmentA"
         android:label="fragment_a"
         tools:layout="@layout/fragment_a">
         <action
@@ -22,12 +22,12 @@
     </fragment>
     <fragment
         android:id="@+id/fragmentB"
-        android:name="com.np.suprimpoudel.day3assignment.FragmentB"
+        android:name="com.np.suprimpoudel.day3assignment.features.fragments.FragmentB"
         android:label="fragment_b"
         tools:layout="@layout/fragment_b" />
     <fragment
         android:id="@+id/profilePage"
-        android:name="com.np.suprimpoudel.day3assignment.ProfilePage"
+        android:name="com.np.suprimpoudel.day3assignment.features.fragments.ProfilePage"
         android:label="fragment_profile_page"
         tools:layout="@layout/fragment_profile_page" >
         <argument
@@ -48,7 +48,7 @@
     </fragment>
     <fragment
         android:id="@+id/loginPageFragment"
-        android:name="com.np.suprimpoudel.day3assignment.LoginPageFragment"
+        android:name="com.np.suprimpoudel.day3assignment.features.fragments.LoginPageFragment"
         android:label="fragment_login_page"
         tools:layout="@layout/fragment_login_page">
         <argument

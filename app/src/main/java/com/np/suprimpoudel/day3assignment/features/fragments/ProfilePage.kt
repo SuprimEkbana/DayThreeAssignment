@@ -1,4 +1,4 @@
-package com.np.suprimpoudel.day3assignment
+package com.np.suprimpoudel.day3assignment.features.fragments
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
+import com.np.suprimpoudel.day3assignment.R
 import com.np.suprimpoudel.day3assignment.databinding.FragmentProfilePageBinding
 
 class ProfilePage : Fragment() {

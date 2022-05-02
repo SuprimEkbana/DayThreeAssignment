@@ -13,7 +13,7 @@ android {
 
     defaultConfig {
         applicationId "com.np.suprimpoudel.day3assignment"
-        minSdk 21
+        minSdkVersion 21
         targetSdk 32
         versionCode 1
         versionName "1.0"

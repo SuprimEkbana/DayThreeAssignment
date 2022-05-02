@@ -1,4 +1,4 @@
-package com.np.suprimpoudel.day3assignment
+package com.np.suprimpoudel.day3assignment.features.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.np.suprimpoudel.day3assignment.R
 import com.np.suprimpoudel.day3assignment.databinding.FragmentABinding
-import java.lang.Exception
 
 class FragmentA : Fragment() {
 
@@ -41,7 +41,7 @@ class FragmentA : Fragment() {
         val email = binding.edtEmailAddress.text.toString()
         val phoneNumber = binding.edtPhoneNumber.text.toString()
 
-        if(name.isNotEmpty() && age.isNotEmpty() && address.isNotEmpty() && email.isNotEmpty() && phoneNumber.isNotEmpty()) {
+        if (name.isNotEmpty() && age.isNotEmpty() && address.isNotEmpty() && email.isNotEmpty() && phoneNumber.isNotEmpty()) {
             try {
                 val ageInt = age.toInt()
 
