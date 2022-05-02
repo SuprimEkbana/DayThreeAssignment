@@ -33,8 +33,14 @@ class ProfilePage : Fragment() {
     private fun setUpData() {
         val name = args.personName
         val age = args.age
+        val address = args.address
+        val email = args.emailAddress
+        val phoneNumber = args.phoneNumber
 
         binding.txtPersonName.text = name
         binding.txtPersonAge.text = "Age: $age"
+        binding.txtPersonAddress.text = "Address: $address"
+        binding.txtPersonEmailAddress.text = "Email: $email"
+        binding.txtPersonPhoneNumber.text = "Phone Number: $phoneNumber"
     }
 }

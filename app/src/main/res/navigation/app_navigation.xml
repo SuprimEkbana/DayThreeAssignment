@@ -33,5 +33,14 @@
         <argument
             android:name="age"
             app:argType="integer" />
+        <argument
+            android:name="address"
+            app:argType="string" />
+        <argument
+            android:name="emailAddress"
+            app:argType="string" />
+        <argument
+            android:name="phoneNumber"
+            app:argType="string" />
     </fragment>
 </navigation>
