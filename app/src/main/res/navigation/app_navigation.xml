@@ -11,11 +11,12 @@
         android:label="fragment_a"
         tools:layout="@layout/fragment_a">
         <action
-            android:id="@+id/action_fragmentA_to_fragmentB"
-            app:destination="@id/fragmentB" />
-        <action
             android:id="@+id/action_fragmentA_to_profilePage"
-            app:destination="@id/profilePage" />
+            app:destination="@id/profilePage"
+            app:enterAnim="@anim/anim_from_left"
+            app:exitAnim="@anim/anim_to_right"
+            app:popEnterAnim="@anim/anim_from_right"
+            app:popExitAnim="@anim/anim_to_left"/>
         <action
             android:id="@+id/action_fragmentA_to_loginPageFragment"
             app:destination="@id/loginPageFragment" />
@@ -29,7 +30,7 @@
         android:id="@+id/profilePage"
         android:name="com.np.suprimpoudel.day3assignment.features.fragments.ProfilePage"
         android:label="fragment_profile_page"
-        tools:layout="@layout/fragment_profile_page" >
+        tools:layout="@layout/fragment_profile_page">
         <argument
             android:name="personName"
             app:argType="string" />
@@ -58,8 +59,8 @@
             app:nullable="true" />
         <deepLink
             android:id="@+id/deepLink"
-            app:uri="https://example.com/login/{username}"
             app:action="android.intent.action.MY_ACTION"
-            app:mimeType="type/subtype"/>
+            app:mimeType="type/subtype"
+            app:uri="https://example.com/login/{username}" />
     </fragment>
 </navigation>
