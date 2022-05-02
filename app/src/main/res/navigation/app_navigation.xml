@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_fragmentA_to_profilePage"
             app:destination="@id/profilePage" />
+        <action
+            android:id="@+id/action_fragmentA_to_loginPageFragment"
+            app:destination="@id/loginPageFragment" />
     </fragment>
     <fragment
         android:id="@+id/fragmentB"
@@ -42,5 +45,21 @@
         <argument
             android:name="phoneNumber"
             app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginPageFragment"
+        android:name="com.np.suprimpoudel.day3assignment.LoginPageFragment"
+        android:label="fragment_login_page"
+        tools:layout="@layout/fragment_login_page">
+        <argument
+            android:name="username"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="https://example.com/login/{username}"
+            app:action="android.intent.action.MY_ACTION"
+            app:mimeType="type/subtype"/>
     </fragment>
 </navigation>

@@ -10,11 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Day3Assignment" >
         <activity
-            android:name=".AppDrawer"
-            android:exported="false"
-            android:label="@string/title_activity_app_drawer"
-            android:theme="@style/Theme.Day3Assignment.NoActionBar" />
-        <activity
             android:name=".MainActivity"
             android:exported="true" >
             <intent-filter>
@@ -22,6 +17,14 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="https" />
+                <data android:host="*.example.com" />
+            </intent-filter>
+            <nav-graph android:value="@navigation/app_navigation" />
         </activity>
     </application>
 
